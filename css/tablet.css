@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+  .avatar {
+    display: none;
+  }
+  .jlpt,
+  .syuuryo,
+  .syuuryo2 {
+    display: grid;
+  }
+  .jlpt div h3,
+  .syuuryo div h3,
+  .syuuryo2 div h3 {
+    padding-left: 0px;
+  }
+  .jlpt div ul,
+  .syuuryo div ul,
+  .syuuryo2 div ul {
+    padding-left: 15px;
+  }
+  /* dùng cho digital-cv */
+  #Goals,
+  #Team,
+  #Scopes,
+  #Primary,
+  #Timeline {
+    height: auto;
+  }
+  .icons {
+    text-align: center;
+  }
+  .items {
+    word-wrap: normal;
+  }
+}

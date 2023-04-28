@@ -1,0 +1,51 @@
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .avatar {
+    display: none;
+  }
+  nav > div {
+    padding: 0;
+  }
+  .syuuryo {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .jlpt {
+    border-bottom: 2px solid #d6c08d;
+    padding-bottom: 20px;
+  }
+  .syuuryo3 {
+    border-top: none;
+  }
+  .contact > div > a {
+    display: none;
+  }
+  .container1 {
+    margin-left: 50px;
+  }
+  .cer {
+    margin-left: 70px;
+  }
+  .project,
+  .contact {
+    margin-left: 50px;
+  }
+  .footer {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* dùng cho digital-cv */
+  #Goals,
+  #Team,
+  #Scopes,
+  #Primary,
+  #Timeline {
+    height: auto;
+  }
+  .icons {
+    text-align: center;
+  }
+}

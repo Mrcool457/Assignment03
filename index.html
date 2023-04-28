@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 03</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- Tiêu đề -->
+      <header>
+        <div class="info">
+          <h1>Lê Ngọc Huy</h1>
+          <span>Full Stack Developer</span>
+        </div>
+      </header>
+      <!-- Thanh điều khiển -->
+      <section id="nav-bar">
+        <nav class="container-nav">
+          <div class="items" style="margin-top: 20px">
+            <a href="#" style="color: #000"
+              ><i class="icon-user" style="color: rgb(0, 110, 255)"></i>Thông
+              tin</a
+            >
+          </div>
+          <div class="items" style="margin-top: 20px">
+            <a href="#" style="color: #000"
+              ><i class="icon-doc-text-inv" style="color: rgb(0, 110, 255)"></i
+              >Lý lịch</a
+            >
+          </div>
+          <div class="items">
+            <!-- <h1>Lê Ngọc Huy</h1>
+          <span>Full Stack Developer</span> -->
+            <img class="avatar" src="images/default-avatar.webp" />
+          </div>
+          <div class="items" style="margin-top: 20px">
+            <a href="#" style="color: #000"
+              ><i class="icon-mail-alt" style="color: rgb(0, 110, 255)"></i
+              >Chứng chỉ</a
+            >
+          </div>
+          <div class="items" style="margin-top: 20px">
+            <a href="#" style="color: #000"
+              ><i class="icon-star-1" style="color: rgb(0, 110, 255)"></i>Dự
+              Án</a
+            >
+          </div>
+        </nav>
+      </section>
+      <!-- Thông tin cá nhân -->
+      <section>
+        <div class="row">
+          <div id="target" class="col-12 col-sm-6">
+            <h1 style="margin-left: 30px">Mục tiêu nghề nghiệp</h1>
+            <p style="margin-right: 60px; margin-left: 30px">
+              Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+              của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+              <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã
+              được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
+              như hoàn thành tốt nhất công việc được giao.
+            </p>
+          </div>
+          <div id="personal-info" class="col-12 col-sm-6">
+            <h1 style="margin-left: 30px">Thông tin cá nhân</h1>
+            <div class="section-content">
+              <div><span>Giới tính</span> : Nam</div>
+              <div><span>Ngày sinh</span> : 13/03/1990</div>
+              <div><span>Điện thoại</span> : (+81) 09080901990</div>
+              <div><span>Email</span> :huylnfx21584@funix.edu.vn</div>
+              <div><span>Địa chỉ</span> : Biên Hòa, Đồng Nai</div>
+              <div>
+                <span>Website</span> : https://mrcool457.github.io/lab13/
+              </div>
+              <div class="contact-info" style="color: rgb(0, 110, 255)">
+                <a href="#"><i class="icon-twitter"></i></a>
+                <a href="https://www.facebook.com/lengochuy1990" target="_blank"
+                  ><i class="icon-facebook"></i
+                ></a>
+                <a href="#"><i class="icon-gplus"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/huy-le-ngoc-128669ab/"
+                  target="_blank"
+                  ><i class="icon-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="submit-email">
+              <input type="email" id="email" />
+              <p id="error-email"></p>
+              <button
+                onclick="handleSubmit()"
+                type="button"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trình độ học vấn, kinh nghiệm -->
+      <section id="TrinhDo">
+        <div class="container1">
+          <!-- kinh nghiệm -->
+          <div class="row">
+            <div
+              id="experience"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Kinh Nghiệm
+                    <i
+                      class="ic-toolbox"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+
+                <div class="section-content">
+                  <h4>Công ty Seikou Seimitsu Nhật Bản</h4>
+                  <a>03/2022-<i id="impress">Hiện tại</i></a>
+                  <ul class="details-list">
+                    <li>-Thiết kế cơ cấu máy</li>
+                    <li>-Lập trình và gia công cnc</li>
+                  </ul>
+                </div>
+                <div class="section-content">
+                  <h4>Công ty HIRA-tec Nhật Bản</h4>
+                  <a>12/2015-2/2022</a>
+                  <ul class="details-list">
+                    <li>
+                      -Tính toán thiết kế quá trình qia công sản phẩm từ kim
+                      loại tấm
+                    </li>
+                    <li>-Xây dựng mô hình 3D</li>
+                    <li>-Bóc tách bản vẽ</li>
+                    <li>
+                      -Lập chương trình gia công trên máy cắt laser, máy chấn
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Học vấn -->
+            <div
+              id="education"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Học vấn &nbsp;
+                    <i
+                      class="ic-pencil"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+                <!-- <div class="items2">
+            <i class="ic-pencil" style="font-size: x-large"></i>
+          </div> -->
+
+                <div class="section-content">
+                  <h4>Tham dự kì thi JLPT tại Nhật</h4>
+                  <a>7/2018</a>
+                  <ul class="details-list">
+                    <li>-Tiếng Nhật</li>
+                    <li>-Jlpt N2</li>
+                  </ul>
+                  <br />
+                </div>
+                <div class="section-content">
+                  <h4>Trường ngoại ngữ</h4>
+                  <a>6/2015-12/2015</a>
+                  <ul class="details-list">
+                    <li>-Tiếng Nhật</li>
+                    <li>-Jlpt N4</li>
+                  </ul>
+                  <br />
+                </div>
+
+                <div class="section-content">
+                  <h4>Kỹ sư- Đại học Sư phạm kỹ thuật Tp Hồ Chí Minh</h4>
+                  <a>09/2008-03/2013</a>
+                  <ul class="details-list">
+                    <li>-Khoa công nghệ chế tạo máy</li>
+                    <li>-Loại: giỏi</li>
+                  </ul>
+                </div>
+
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Hoạt động -->
+            <div
+              id="activity"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Hoạt động &nbsp;
+                    <i
+                      class="ic-toolbox"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+                <!-- <div class="items2">
+            <i class="ic-toolbox" style="font-size: x-large"></i>
+          </div> -->
+                <div id="club">
+                  <div class="section-content">
+                    <h4>Tham dự kì thi JLPT tại Nhật</h4>
+                    <a>7/2018</a>
+                    <ul class="details-list">
+                      <li>-Tiếng Nhật</li>
+                      <li>-Jlpt N2</li>
+                    </ul>
+                    <br />
+                  </div>
+                  <div class="section-content">
+                    <h4>Câu lạc bộ võ Manga</h4>
+                    <a>03/2023-hiện tại</a>
+                  </div>
+                </div>
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- sở thích -->
+            <div
+              id="hobbies"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Sở thích &nbsp;
+                    <i
+                      class="ic-telescope"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+                <!-- <div class="items2">
+            <i class="ic-telescope" style="font-size: x-large"></i>
+          </div> -->
+                <div id="hobby">
+                  <div class="section-content">
+                    <div class="music">
+                      <i
+                        class="ic-megaphone"
+                        style="color: rgb(0, 110, 255)"
+                      ></i>
+                    </div>
+                    <p>Âm nhạc</p>
+                  </div>
+
+                  <div class="section-content">
+                    <div class="game">
+                      <i
+                        class="ic-strategy"
+                        style="color: rgb(0, 110, 255)"
+                      ></i>
+                    </div>
+                    <p style="padding: 0">Chơi game</p>
+                  </div>
+
+                  <div class="section-content">
+                    <div class="travel">
+                      <i
+                        class="ic-hotairballoon"
+                        style="color: rgb(0, 110, 255)"
+                      ></i>
+                    </div>
+                    <p>Du lịch</p>
+                  </div>
+                  <div class="section-content">
+                    <div class="food">
+                      <i class="ic-basket" style="color: rgb(0, 110, 255)"></i>
+                    </div>
+                    <p>Nấu ăn</p>
+                  </div>
+                </div>
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Ngôn ngữ -->
+            <div
+              id="language"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Ngôn ngữ &nbsp;<i
+                      class="ic-mic"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+                <!-- <div class="items2">
+            <i class="ic-mic" style="font-size: x-large"></i>
+          </div> -->
+                <div class="language">
+                  <div class="section-content">
+                    <p style="margin-bottom: 0">Tiếng Nhật-JLPT N2</p>
+                    <div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="section-content">
+                    <p style="margin-bottom: 0; padding-top: 20px">
+                      Tiếng Anh-TOEIC 400
+                    </p>
+                    <div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar"></div>
+                      <div class="pro-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- kỹ năng -->
+            <div
+              id="skill"
+              onmouseover="handleOnMouseOver(this)"
+              onmouseout="handleOnMouseOut(this)"
+              style="margin-top: 20px"
+              class="parent col-12 col-sm-6 col-lg-4"
+            >
+              <div class="child">
+                <a class="items1">
+                  <h3>
+                    Kỹ năng &nbsp;<i
+                      class="ic-tools-2"
+                      style="font-size: x-large; color: gray"
+                    ></i>
+                  </h3>
+                </a>
+                <!-- <div class="items2">
+            <i class="ic-tools-2" style="font-size: x-large"></i>
+          </div> -->
+                <div>
+                  <div class="section-content">
+                    <p style="margin-bottom: 0">Autocad</p>
+                    <div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="section-content">
+                    <p style="margin-bottom: 0; padding-top: 20px">
+                      Solidworks
+                    </p>
+                    <div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar-fill"></div>
+                      <div class="pro-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control-view">
+                  <button
+                    type="button"
+                    class="btn btn-warning view-more"
+                    onclick="handleViewMore(this)"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Chứng chỉ, giải thưởng -->
+      <section id="certificate" class="bg-grey">
+        <div>
+          <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
+          <br />
+
+          <div class="cer">
+            <div class="row">
+              <div class="child2 col-12 col-sm-6 col-lg-6">
+                <div class="jlpt">
+                  <img
+                    src="images/jlpt.png"
+                    height="auto"
+                    width="50%"
+                    alt="chứng chỉ tiếng Nhật"
+                  />
+                  <div>
+                    <h3 style="padding-bottom: 10px">Chứng chỉ JLPT</h3>
+                    <ul>
+                      <li>Chứng chỉ năng lực tiếng Nhật</li>
+                      <li>Trình độ N2</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="child2 col-sm-6 col-lg-6">
+                <div class="syuuryo">
+                  <img
+                    src="images/syuuryo.png"
+                    height="auto"
+                    width="50%"
+                    alt="chứng chỉ huấn luyện"
+                  />
+                  <div>
+                    <h3 style="padding-bottom: 10px">
+                      Chứng chỉ chế tạo máy-Japan
+                    </h3>
+                    <ul>
+                      <li>Hoàn thành khóa đào tạo chế tạo máy</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="child2 col-12 col-sm-6 col-lg-6">
+                <div class="syuuryo2">
+                  <img
+                    src="images/syuuryo.png"
+                    height="auto"
+                    width="50%"
+                    alt="chứng chỉ huấn luyện"
+                  />
+                  <div>
+                    <h3 style="padding-bottom: 10px">Chứng chỉ leader-Japan</h3>
+                    <ul>
+                      <li>Hoàn thành khóa huấn luyện leader</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="child2 col-12 col-sm-6 col-lg-6">
+                <div class="syuuryo3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Dự án -->
+      <section id="project" class="container">
+        <div>
+          <h2 class="section-title">Dự án</h2>
+          <br />
+          <div class="project">
+            <div class="row">
+              <div class="col-12 col-sm-4 col-lg-4">
+                <img
+                  src="images/project_1.png"
+                  height="auto"
+                  width="100%"
+                  alt="project1"
+                />
+                <div id="project-cv">
+                  <a
+                    class="project-title"
+                    href="./digital-cv.html?name=cv"
+                    target="_blank"
+                    ><b>CV Cá nhân</b></a
+                  >
+                </div>
+                <div class="project1">
+                  <a
+                    ><a
+                      style="
+                        background-color: rgb(0, 110, 255);
+                        border-radius: 15px;
+                        padding: 5px 10px;
+                        color: white;
+                      "
+                      >2023</a
+                    >
+                    <i class="icon-user-1"></i>FUNIX
+                    <i class="icon-lamp"></i>Developer</a
+                  >
+                </div>
+                <table>
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang CV online. Gồm thông tin cá nhân cũng như kỹ năng
+                      nghề nghiệp.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>Phát triển, xử lý, tối ưu code.</td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>HTML, CSS</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-12 col-sm-4 col-lg-4">
+                <img
+                  src="images/project_2.png"
+                  height="auto"
+                  width="100%"
+                  alt="project2"
+                />
+                <div id="project-machine">
+                  <a
+                    class="project-title"
+                    href="./digital-cv.html?name=machine"
+                    target="_blank"
+                    ><b>Web theo dõi máy</b></a
+                  >
+                </div>
+                <div class="project1">
+                  <a
+                    ><a
+                      style="
+                        background-color: rgb(0, 110, 255);
+                        border-radius: 15px;
+                        padding: 5px 10px;
+                        color: white;
+                      "
+                      >Dự định</a
+                    >
+                    <i class="icon-user-1"></i>SEIKOU-SEIMITSU
+                    <i class="icon-lamp"></i>Developer</a
+                  >
+                </div>
+                <table>
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang web theo dõi tình trạng hoạt động, hiệu quả hoạt
+                      động thông qua biểu đồ của máy
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>Phát triển, xử lý, tối ưu code.</td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>HTML, CSS</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-12 col-sm-4 col-lg-4">
+                <img
+                  src="images/project_3.png"
+                  height="auto"
+                  width="100%"
+                  alt="project3"
+                />
+                <div id="project-sell">
+                  <a
+                    class="project-title"
+                    href="./digital-cv.html?name=sell"
+                    target="_blank"
+                    ><b>Web bán hàng</b></a
+                  >
+                </div>
+                <div class="project1">
+                  <a
+                    ><a
+                      style="
+                        background-color: rgb(0, 110, 255);
+                        border-radius: 15px;
+                        padding: 5px 10px;
+                        color: white;
+                      "
+                      >Dự định</a
+                    >
+                    <i class="icon-user-1"></i>SEIKOU-SEIMITSU
+                    <i class="icon-lamp"></i>Developer</a
+                  >
+                </div>
+                <table>
+                  <tr>
+                    <th>Mô tả</th>
+                    <td>
+                      Trang web cho phép nhận đơn đặt hàng từ các cá nhân cũng
+                      như tổ chức, tự động tính toán và báo giá.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Nhiệm vụ</th>
+                    <td>Phát triển, xử lý, tối ưu code.</td>
+                  </tr>
+                  <tr>
+                    <th>Công nghệ</th>
+                    <td>HTML, CSS</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <section class="bg-grey">
+          <div id="contact">
+            <div class="contact">
+              <div class="footer">
+                <i
+                  class="icon-facebook-circled"
+                  style="color: rgb(0, 110, 255); font-size: 200%"
+                ></i>
+                <a
+                  style="text-decoration: none; color: gray"
+                  href="https://www.facebook.com/lengochuy1990"
+                  target="_blank"
+                  style="color: black"
+                  >Facebook</a
+                >
+              </div>
+              <div class="footer">
+                <i
+                  class="icon-linkedin-circled"
+                  style="color: rgb(0, 110, 255); font-size: 200%"
+                ></i>
+                <a
+                  style="text-decoration: none; color: gray"
+                  href="https://www.linkedin.com/in/huy-le-ngoc-128669ab/"
+                  target="_blank"
+                  style="color: black"
+                  >Linkedin</a
+                >
+              </div>
+              <div class="footer">
+                <i
+                  class="icon-github-circled"
+                  style="color: rgb(0, 110, 255); font-size: 200%"
+                ></i>
+                <a
+                  style="text-decoration: none; color: gray"
+                  ref="#"
+                  target="_blank"
+                  style="color: black"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
+      <script src="digital-cv.js"></script>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Thiết lập banner*/
+header {
+  position: relative;
+  height: 400px;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.308)),
+    url("../images/banner.jpg");
+  background-size: cover;
+}
+
+/* đưa chữ lên trên ảnh, vào giữa */
+div.info {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* xóa gạch chân của navi */
+.container-nav a {
+  text-decoration: none;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav > div {
+  display: flex;
+  padding: 10px 0;
+  margin: 0 7%;
+  max-width: 100%;
+  text-align: center;
+}
+/* Thay đổi avartar */
+.avatar {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: absolute;
+  left: 44%;
+  top: 45%;
+}
+.container,
+.bg-grey {
+  background: #f7f7f7;
+  margin-top: 20px;
+}
+
+#personal-info {
+  padding-left: 5%;
+}
+
+.section-content,
+.submit-email {
+  margin-left: 30px;
+}
+#error-email {
+  color: red;
+  font-weight: 700;
+}
+#certificate .section-title,
+#project .section-title {
+  padding-left: 20px;
+}
+#personal-info .section-content,
+.section-content,
+#degree .section-content,
+#club .section-content,
+#hobby .section-content,
+.view-more,
+.less-more {
+  display: none;
+}
+
+#TrinhDo {
+  justify-content: space-around;
+}
+.contact-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Chia cột phần thông tin nghề nghiệp */
+.container1 {
+  margin: 0 0;
+  padding: 20px 0;
+}
+
+.child {
+  border: 1px solid rgb(222, 219, 219);
+}
+#impress {
+  color: white;
+  background-color: rgb(0, 157, 255);
+  border: 1px solid black;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+.details-list {
+  list-style: none;
+  padding-left: 0;
+}
+/* .item {
+  flex: 2;
+  position: relative;
+} */
+.items {
+  word-break: normal;
+}
+
+.items1,
+.control-view {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+.items2 {
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+#hobby {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Bo tròn phần sở thích */
+.music,
+.game,
+.travel,
+.food {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px rgb(0, 110, 255);
+  text-align: center;
+  margin-left: 8px;
+}
+
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  padding-top: 15px;
+}
+
+/* tạo thanh trạng thái của kỹ năng và ngôn ngữ */
+.pro-bar,
+.pro-bar-fill {
+  display: inline-block;
+  height: 5px;
+  margin-right: 10px;
+  width: 45px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.pro-bar-fill {
+  background: #199cdb;
+}
+
+.cer {
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
+  justify-content: center;
+  margin: 0 0px;
+}
+
+.jlpt,
+.syuuryo,
+.syuuryo2 {
+  display: flex;
+}
+
+.jlpt div h3,
+.syuuryo div h3,
+.syuuryo2 div h3 {
+  padding-left: 20px;
+}
+.syuuryo {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+.syuuryo2,
+.syuuryo3 {
+  border-top: 2px solid #d6c08d;
+  padding-top: 20px;
+}
+.child2 {
+  padding: 0;
+}
+.jlpt,
+.syuuryo {
+  margin-bottom: 20px;
+}
+/* Dự án */
+
+tr th {
+  max-width: 100px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project h3,
+.project .project1,
+.project table {
+  border-bottom: 1px solid black;
+  margin: 0px 10px;
+  padding: 10px 0;
+}
+.project img {
+  max-width: 100%;
+}
+
+/* footer */
+#contact {
+  text-align: center;
+}
+.contact {
+  display: inline-flex;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer {
+  margin: 0 10px;
+}
+.project-title {
+  font-size: x-large;
+  text-decoration: none;
+  color: black;
+}
